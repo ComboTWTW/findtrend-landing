@@ -9,9 +9,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
 
   return (
-    <nav className="container  z-50 flex flex-row bg-black m-auto justify-center items-center">
+    <nav className="container relative flex flex-row bg-green-800 m-auto justify-center items-center">
   
-        <div className="flex relative w-full flex-row justify-between items-center px-4 py-7 md:px-0">
+        <div className="flex w-full flex-row justify-between items-center px-4 py-7 md:px-0">
             {/* Desktop Navbar Start */}
             <Fade direction="up" className="hidden md:inline"><a href="#" onClick={() => window.location.reload()}><img src={navbarLogo} alt="navbarLogo" /></a></Fade>
             
@@ -32,7 +32,7 @@ const Navbar = () => {
             {/* Mobile Burger End */}  
 
             {/* Mobile Navbar Start */}
-              <ul className={`absolute bg-black rounded-b-[5px] z-0 w-full flex flex-col right-0 left-0 items-center py-20 gap-10 ${toggle ? 'top-[97px] ' : '-top-[360px] -z-10'} duration-500 md:hidden`}>
+              <ul className={`absolute bg-black rounded-b-[5px] -z-10 w-full flex flex-col right-0 left-0 items-center py-20 gap-10 ${toggle ? 'top-[97px]' : '-top-[360px]'} duration-500 md:hidden`}>
                 {navbarLinks.map((link) => {
                   return <a href='#' key={link.id} className='text-white poppins text-[18px]'>{link.title}</a>
                 })}
