@@ -9,17 +9,17 @@ const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
 
   return (
-    <nav className="container relative flex flex-row bg-green-800 m-auto justify-center items-center">
+    <nav className="container bg-inherit  flex flex-row  m-auto justify-center items-center">
   
-        <div className="flex w-full flex-row justify-between items-center px-4 py-7 md:px-0">
+        <div className="flex w-full flex-row bg-inherit z-20 justify-between items-center px-5 py-7 md:px-0">
             {/* Desktop Navbar Start */}
-            <Fade direction="up" className="hidden md:inline"><a href="#" onClick={() => window.location.reload()}><img src={navbarLogo} alt="navbarLogo" /></a></Fade>
+            <Fade direction="up" triggerOnce={true} className="hidden md:inline"><a href="#" onClick={() => window.location.reload()}><img src={navbarLogo} alt="navbarLogo" /></a></Fade>
             
             <a href="#" onClick={() => window.location.reload()} className='md:hidden'><img src={navbarLogo} alt="navbarLogo" /></a>
 
             <ul className="hidden md:flex flex-row gap-10">
               {navbarLinks.map((link) => {
-                return <Fade direction="up" delay={100} triggerOnce={false}><a href='#' key={link.id} className='text-white poppins text-[18px] hover:text-gray-300 hover:duration-75'>{link.title}</a></Fade>
+                return <Fade direction="up"  delay={100} triggerOnce={true}><a href='#' key={link.id} className='text-white poppins text-[18px] hover:text-gray-300 hover:duration-75'>{link.title}</a></Fade>
               })}
             </ul>
             {/* Desktop Navbar End */}
@@ -31,14 +31,15 @@ const Navbar = () => {
             </div>
             {/* Mobile Burger End */}  
 
-            {/* Mobile Navbar Start */}
-              <ul className={`absolute bg-black rounded-b-[5px] -z-10 w-full flex flex-col right-0 left-0 items-center py-20 gap-10 ${toggle ? 'top-[97px]' : '-top-[360px]'} duration-500 md:hidden`}>
-                {navbarLinks.map((link) => {
-                  return <a href='#' key={link.id} className='text-white poppins text-[18px]'>{link.title}</a>
-                })}
-              </ul>
-            {/* Mobile Navbar End */}
+          
         </div>
+        {/* Mobile Navbar Start */}
+        <ul className={`absolute bg-black rounded-b-[5px] z-10 w-full flex flex-col right-0 left-0 items-center py-20 gap-10 ${toggle ? 'top-[97px]' : '-top-[360px]'} duration-500 md:hidden`}>
+            {navbarLinks.map((link) => {
+              return <a href='#' key={link.id} className='text-white poppins text-[18px]'>{link.title}</a>
+            })}
+          </ul>
+        {/* Mobile Navbar End */}
     </nav>
   )
 }

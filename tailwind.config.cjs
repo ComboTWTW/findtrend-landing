@@ -11,6 +11,8 @@ module.exports = {
     extend: {
       colors: {
         mainGreen: '#A8FF35',
+        mainGray: '#8B8B8B',
+        hoverGreen: '#87D322',
       }
     },
     screens: {
