@@ -1,10 +1,10 @@
 import Navbar from "./Navbar"
-import { heroArrow, tab1, tab2, tab3, tab4, } from "../assets"
+import { heroArrow, tab1, tab2, tab3, tab4} from "../assets"
 import { Fade } from "react-awesome-reveal";
 
 const Hero = () => {
   return (
-    <div className="w-full  bg-black text-center flex flex-col items-center">
+    <div className="w-full  bg-black text-center flex flex-col items-center overflow-hidden">
         <Navbar />
         <div className="container flex flex-col mt-20 items-center ">
           <Fade direction={'up'} triggerOnce={true}>
@@ -22,12 +22,12 @@ const Hero = () => {
             </div>
           </Fade>
 
-          <div className="flex flex-col mt-20 max-w-xs ">
-            <img src={tab1} alt="tab1" className="z-[5] -rotate-3"/>
-            <img src={tab2} alt="tab2" className="z-[4] -mt-3 rotate-3"/>
-            <img src={tab3} alt="tab3" className="z-[3] -mt-4 -rotate-3"/>
-            <img src={tab4} alt="tab4" className="z-[2] -mt-3 rotate-3"/>
-          </div>
+          <div className="flex flex-col w-full mt-20 max-w-xs lg:flex-row md:justify-center lg:min-w-[1080px] md:mt-32 mb-28">
+            <img src={tab4} alt="tab4" className="z-[5] -rotate-3 lg:relative lg:max-w-[350px] lg:max-h-[100px] lg:left-44 lg:bottom-8"/>
+            <img src={tab3} alt="tab3" className="z-[4] -mt-3 rotate-3 lg:relative lg:max-w-[350px] lg:max-h-[100px] lg:top-12 lg:left-4"/>
+            <img src={tab2} alt="tab2" className="z-[3] -mt-4 -rotate-3 lg:relative lg:max-w-[350px] lg:max-h-[100px] lg:right-16"/>
+            <img src={tab1} alt="tab1" className="z-[2] -mt-3 rotate-3 lg:relative lg:max-w-[350px] lg:max-h-[100px] lg:right-40 lg:top-10"/>
+          </div> 
         </div>
     </div>
   )

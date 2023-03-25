@@ -6,6 +6,7 @@ import tab3 from './tab3.png'
 import tab4 from './tab4.png'
 import tab5 from './tab5.png'
 
+
 export {
     navbarLogo,
     heroArrow,
