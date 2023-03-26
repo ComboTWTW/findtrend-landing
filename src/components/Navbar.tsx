@@ -9,9 +9,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
 
   return (
-    <nav className="container bg-black md:bg-inherit flex flex-row  m-auto justify-center items-center">
+    <nav className="container  bg-black md:bg-inherit   flex flex-row  m-auto justify-center items-center">
   
-        <div className="  flex w-full  flex-row bg-inherit z-[11] justify-between items-center px-5 py-7 md:px-0">
+        <div className="  flex w-full bg-black md:bg-inherit flex-row   z-[11] justify-between items-center px-5 py-7 md:px-0">
             {/* Desktop Navbar Start */}
             <Fade direction="up" triggerOnce={true} className="hidden md:inline"><a href="#" onClick={() => window.location.reload()}><img src={navbarLogo} alt="navbarLogo" /></a></Fade>
             

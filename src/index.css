@@ -15,8 +15,20 @@ body, #root {
   font-family: 'Roboto';
 }
 
-.backgroundOrnament {
-  background-image: url('./assets/ornament.svg');
-  background-size: 100% ;
-  
+
+@media (max-width: 768px) {
+  .backgroundOrnament {
+    background-image: url('./assets/ornament.svg');
+    background-size: 330%;
+    background-position: center;
+    
+  }
+}
+
+@media (min-width: 768px) {
+  .backgroundOrnament {
+    background-image: url('./assets/ornament.svg');
+    background-size: 100% ;
+    
+  }
 }
