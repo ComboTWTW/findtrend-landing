@@ -6,7 +6,10 @@ import tab3 from './tab3.png'
 import tab4 from './tab4.png'
 import tab5 from './tab5.png'
 import ornament from './ornament.svg'
-
+import solutionArrow from './solution-arrow.png'
+import needArrow from './need-arrow.png'
+import solutionArrowMobile from './solution-arrowMobile.svg'
+import needArrowMobile from './need-arrowMobile.svg'
 
 export {
     navbarLogo,
@@ -17,4 +20,8 @@ export {
     tab4,
     tab5,
     ornament,
+    solutionArrow,
+    needArrow,
+    solutionArrowMobile,
+    needArrowMobile,
 }
