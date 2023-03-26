@@ -25,6 +25,15 @@ body, #root {
   }
 }
 
+@media (max-width: 768px) {
+  .backgroundOrnamentNav {
+    background-image: url('./assets/ornament.svg');
+    background-size: 330%;
+    background-position: center top;
+    
+  }
+}
+
 @media (min-width: 768px) {
   .backgroundOrnament {
     background-image: url('./assets/ornament.svg');
