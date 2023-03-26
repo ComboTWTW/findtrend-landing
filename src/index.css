@@ -14,3 +14,9 @@ body, #root {
 .roboto {
   font-family: 'Roboto';
 }
+
+.backgroundOrnament {
+  background-image: url('./assets/ornament.svg');
+  background-size: 100% ;
+  
+}

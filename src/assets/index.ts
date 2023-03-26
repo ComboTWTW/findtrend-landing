@@ -5,6 +5,7 @@ import tab2 from './tab2.png'
 import tab3 from './tab3.png'
 import tab4 from './tab4.png'
 import tab5 from './tab5.png'
+import ornament from './ornament.svg'
 
 
 export {
@@ -15,4 +16,5 @@ export {
     tab3,
     tab4,
     tab5,
+    ornament,
 }

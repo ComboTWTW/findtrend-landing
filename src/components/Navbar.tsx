@@ -9,9 +9,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
 
   return (
-    <nav className="container bg-inherit  flex flex-row  m-auto justify-center items-center">
+    <nav className="container bg-black md:bg-inherit flex flex-row  m-auto justify-center items-center">
   
-        <div className="flex w-full flex-row bg-inherit z-20 justify-between items-center px-5 py-7 md:px-0">
+        <div className="  flex w-full  flex-row bg-inherit z-[11] justify-between items-center px-5 py-7 md:px-0">
             {/* Desktop Navbar Start */}
             <Fade direction="up" triggerOnce={true} className="hidden md:inline"><a href="#" onClick={() => window.location.reload()}><img src={navbarLogo} alt="navbarLogo" /></a></Fade>
             
@@ -34,7 +34,7 @@ const Navbar = () => {
           
         </div>
         {/* Mobile Navbar Start */}
-        <ul className={`absolute bg-black rounded-b-[5px] z-10 w-full flex flex-col right-0 left-0 items-center py-20 gap-10 ${toggle ? 'top-[97px]' : '-top-[360px]'} duration-500 md:hidden`}>
+        <ul className={`absolute bg-[#000] rounded-b-[5px] z-10 w-full flex flex-col right-0 left-0 items-center py-20 gap-10 ${toggle ? 'top-[97px]' : '-top-[360px] '} duration-500 md:hidden`}>
             {navbarLinks.map((link) => {
               return <a href='#' key={link.id} className='text-white poppins text-[18px]'>{link.title}</a>
             })}
