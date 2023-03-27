@@ -41,3 +41,62 @@ body, #root {
     
   }
 }
+
+
+@media (min-width: 1200px) {
+  .element1 {
+    transform: translate3d(355px, 602px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    transform-style: preserve-3d;
+    opacity: 0;
+    transition-duration: 1300ms;
+  }
+  
+  .element11 {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-3deg) skew(0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+    transition-duration: 1300ms;
+  }
+  
+  .element2 {
+    transform: translate3d(166px, 527px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    transform-style: preserve-3d;
+    opacity: 0;
+    transition-duration: 1300ms;
+  }
+  
+  .element22 {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(3deg) skew(0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+    transition-duration: 1300ms;
+  }
+  
+  .element3 {
+    transform: translate3d(-104px, 577px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    transform-style: preserve-3d;
+    opacity: 0;
+    transition-duration: 1300ms;
+  }
+  
+  .element33 {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-3deg) skew(0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+    transition-duration: 1300ms;
+  }
+  
+  .element4 {
+    transform: translate3d(-357px, 536px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    transform-style: preserve-3d;
+    opacity: 0;
+    transition-duration: 1300ms;
+  }
+  
+  .element44 {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(3deg) skew(0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+    transition-duration: 1300ms;
+  }
+}
