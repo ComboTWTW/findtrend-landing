@@ -49,7 +49,7 @@ const Hero = () => {
 
           <div className="flex flex-col items-center w-full mt-20 max-w-xs lg:flex-row md:justify-center lg:min-w-[1080px] md:mt-32 mb-24 lg:mb-44">
 
-          <Scrollama onStepEnter={handleStepEnter2} >
+          <Scrollama onStepEnter={handleStepEnter2} offset={0.2}>
             <Step>
               <img src={tab4} alt="tab4" className={`z-[5] -rotate-3 ${rectMoving  ? 'element1' : 'element11'} lg:relative lg:max-w-[350px] lg:max-h-[100px] lg:left-44 lg:bottom-8`}/>
             </Step>

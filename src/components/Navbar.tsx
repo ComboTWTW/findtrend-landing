@@ -17,11 +17,12 @@ const Navbar = () => {
             
             <a href="#" onClick={() => window.location.reload()} className='md:hidden'><img src={navbarLogo} alt="navbarLogo" /></a>
 
-            <ul className="hidden md:flex flex-row gap-10">
+            <Fade direction="up"  damping={0.1} cascade={true} triggerOnce={true}><ul className="hidden md:flex flex-row gap-10">
               {navbarLinks.map((link) => {
-                return <Fade direction="up"  delay={100} triggerOnce={true}><a href='#' key={link.id} className='text-white poppins text-[18px] hover:text-gray-300 hover:duration-75'>{link.title}</a></Fade>
+                return <a href='#' key={link.id} className='text-white poppins text-[18px] hover:text-gray-300 hover:duration-75'>{link.title}</a>
               })}
             </ul>
+            </Fade>
             {/* Desktop Navbar End */}
             
 
