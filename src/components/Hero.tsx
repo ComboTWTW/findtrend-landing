@@ -4,6 +4,7 @@ import { Fade } from "react-awesome-reveal";
 import SubHero from "./SubHero";
 import { useState } from "react";
 import { Scrollama, Step } from 'react-scrollama';
+import Partners from "./Partners";
 
 const Hero = () => {
 
@@ -70,6 +71,7 @@ const Hero = () => {
           </div> 
         </div>
         <SubHero />
+        <Partners />
     </div>
   )
 }

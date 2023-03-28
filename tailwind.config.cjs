@@ -13,6 +13,8 @@ module.exports = {
         mainGreen: '#A8FF35',
         mainGray: '#8B8B8B',
         hoverGreen: '#87D322',
+        lightGray: '#8b8b8b',
+        lightGray2: '#f5f5f5',
       }
     },
     screens: {

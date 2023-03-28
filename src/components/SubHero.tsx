@@ -3,7 +3,7 @@ import { tab5, solutionArrow, needArrow, solutionArrowMobile, needArrowMobile } 
 const SubHero = () => {
   return (
     <div className="bg-mainGreen w-full flex  justify-center">
-        <div className="container flex flex-col items-center px-4 md:px-0 mt-20  mb-20">
+        <div className="container flex flex-col items-center px-4 md:px-0 mt-24  mb-24">
             <h1 className="roboto text-black  md:px-0 text-[2rem] md:text-[4rem] font-bold md:leading-[135%]">Open new tabs is sh*t</h1>
             <div className="bg-white max-w-xs md:max-w-none relative rounded-[1rem] mt-[90px] md:mt-16 md:px-20 p-6 md:py-16">
                 <img src={tab5} alt="tab5" id='tab5' className="md:max-w-[350px] md:max-h-[100px]" />
