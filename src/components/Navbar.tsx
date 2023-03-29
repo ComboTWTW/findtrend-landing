@@ -17,7 +17,8 @@ const Navbar = () => {
             
             <a href="#" onClick={() => window.location.reload()} className='md:hidden'><img src={navbarLogo} alt="navbarLogo" /></a>
 
-            <Fade direction="up"  damping={0.1} cascade={true} triggerOnce={true}><ul className="hidden md:flex flex-row gap-10">
+            <Fade direction="up"  damping={0.1} cascade={true} triggerOnce={true}>
+              <ul className="hidden md:flex flex-row gap-10">
               {navbarLinks.map((link) => {
                 return <a href='#' key={link.id} className='text-white poppins text-[18px] hover:text-gray-300 hover:duration-75'>{link.title}</a>
               })}

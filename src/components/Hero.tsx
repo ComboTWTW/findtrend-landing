@@ -5,6 +5,7 @@ import SubHero from "./SubHero";
 import { useState } from "react";
 import { Scrollama, Step } from 'react-scrollama';
 import Partners from "./Partners";
+import Prices from "./Prices";
 
 const Hero = () => {
 
@@ -72,6 +73,7 @@ const Hero = () => {
         </div>
         <SubHero />
         <Partners />
+        <Prices />
     </div>
   )
 }
