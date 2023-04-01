@@ -105,3 +105,10 @@ body, #root {
 
   }
 }
+
+@media (min-width: 768px) {
+  .priceButton:active {
+    transform: scale(0.97);
+  }
+}
+

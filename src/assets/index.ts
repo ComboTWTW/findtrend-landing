@@ -10,8 +10,11 @@ import solutionArrow from './solution-arrow.png'
 import needArrow from './need-arrow.png'
 import solutionArrowMobile from './solution-arrowMobile.svg'
 import needArrowMobile from './need-arrowMobile.svg'
-import saveArrow from './save-arrow.png'
+import saveArrow from './save-arrow.svg'
 import mark from './mark.png'
+import saveArrowMB from './saveArrow-mb.svg'
+
+
 export {
     navbarLogo,
     heroArrow,
@@ -27,4 +30,5 @@ export {
     needArrowMobile,
     saveArrow,
     mark,
+    saveArrowMB,
 }

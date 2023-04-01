@@ -1,7 +1,7 @@
 import Switch from "react-switch"
 import { cards } from "../constants"
 import { useState } from "react"
-import { saveArrow, mark } from '../assets/index'
+import { saveArrow, saveArrowMB, mark } from '../assets/index'
 
 const Prices = () => {
 
@@ -40,9 +40,11 @@ const Prices = () => {
                 handleDiameter={28}
                 /></div>
                 <p className={`roboto font-medium text-xl md:text-2xl text-${toggle ? 'white' : 'lightGray'}`}>Yearly</p>
+                <img src={saveArrow} alt="saveArrow" className="hidden md:inline-block absolute -right-28 -top-2"/>
+                <img src={saveArrowMB} alt="saveArrow-mobile" className="md:hidden absolute  left-44 -bottom-16"/>
             </div>
 
-            <div className="flex w-full flex-col md:flex-row sm: gap-8 md:gap-2 lg:gap-8 mt-8">
+            <div className="flex w-full flex-col md:flex-row sm: gap-8 md:gap-2 lg:gap-8 mt-20 md:mt-8">
               {cards.map((card) => {
                 return <div id={card.id} className={`${card.id === 'regular' ? 'bg-mainGreen' : 'bg-white'} flex min-h-[635px] text-left lg:w-full flex-col justify-between px-7 py-7 rounded-[16px]`}>
                   <div className="flex flex-col"><h3 className="roboto text-3xl font-black">{card.header}</h3>
@@ -54,7 +56,7 @@ const Prices = () => {
                       return <li className="roboto text-black"><img src={mark} alt="mark" className="inline mr-2 mb-1"/>{item}</li>
                     })}
                   </ul></div>
-                  <button className={`w-full md:mt-4 lg:mt-0 justify-self-end roboto font-bold py-[15px]  rounded-full ${card.id === 'regular' ? 'bg-black text-white font-medium hover:bg-' : 'bg-mainGreen text-black hover:bg-'}`}>Start Free Trial</button>
+                  <button className={`priceButton w-full md:mt-4 lg:mt-0  self-center roboto font-bold py-[15px]  rounded-full ${card.id === 'regular' ? 'bg-black text-white font-medium hover:bg-[#2b2b2b]' : 'bg-mainGreen text-black hover:bg-[#87D322]'}`}>Start Free Trial</button>
                 </div>
               })}
             </div>
