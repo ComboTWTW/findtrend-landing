@@ -13,6 +13,7 @@ import needArrowMobile from './need-arrowMobile.svg'
 import saveArrow from './save-arrow.svg'
 import mark from './mark.png'
 import saveArrowMB from './saveArrow-mb.svg'
+import logoFooter from './logoFooter.svg'
 
 
 export {
@@ -31,4 +32,5 @@ export {
     saveArrow,
     mark,
     saveArrowMB,
+    logoFooter,
 }

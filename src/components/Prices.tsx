@@ -1,68 +1,46 @@
-import Switch from "react-switch"
-import { cards } from "../constants"
 import { useState } from "react"
-import { saveArrow, saveArrowMB, mark } from '../assets/index'
+
 import { Fade } from "react-awesome-reveal";
+import Cards from "./Cards";
+import PricesHead from "./PricesHead";
 
 const Prices = () => {
 
   const [toggle, setToggle] = useState<boolean>(false);
 
   return (
-    <div className="w-full bg-black flex justify-center">
-        <div className="container flex flex-col items-center px-4 md:px-0 mt-20 md:mt-24  pb-28">
-        <Fade direction={'up'} triggerOnce={true}><h1 className="roboto text-white tracking-wide md:px-0 text-[2.125rem] md:text-[4rem] font-black  md:leading-[135%]">Get your best deal</h1></Fade>
-        <Fade direction={'up'} triggerOnce={true}><div className="flex flex-row items-center relative gap-5 mt-8">
-                <p className={`roboto font-medium  text-xl md:text-2xl text-${toggle ? 'lightGray' : 'white'}`}>Monthly</p>
-                <div className="hidden md:block"><Switch 
-                checked={toggle} 
-                onChange={() => setToggle(!toggle)}
-                offColor={'#fff'}
-                offHandleColor={'#A8FF35'}
-                onColor={'#A8FF35'}
-                onHandleColor={'#fff'}
-                uncheckedIcon={false}
-                checkedIcon={false}
-                height={50}
-                width={110}
-                handleDiameter={32}
-                /></div>
-                <div className="md:hidden block"><Switch 
-                checked={toggle} 
-                onChange={() => setToggle(!toggle)}
-                offColor={'#fff'}
-                offHandleColor={'#A8FF35'}
-                onColor={'#A8FF35'}
-                onHandleColor={'#fff'}
-                uncheckedIcon={false}
-                checkedIcon={false}
-                height={40}
-                width={85}
-                handleDiameter={28}
-                /></div>
-                <p className={`roboto font-medium text-xl md:text-2xl text-${toggle ? 'white' : 'lightGray'}`}>Yearly</p>
-                <img src={saveArrow} alt="saveArrow" className="hidden md:inline-block absolute -right-28 -top-2"/>
-                <img src={saveArrowMB} alt="saveArrow-mobile" className="md:hidden absolute  left-44 -bottom-16"/>
-            </div></Fade>
+  <div className="w-full bg-black flex justify-center">
+    <div className="container flex flex-col items-center px-4 md:px-0 mt-20 md:mt-24  pb-28">
 
-            <Fade direction={'up'} triggerOnce={true} className='w-full'><div className="flex w-full flex-col md:flex-row sm: gap-8 md:gap-2 lg:gap-8 mt-20 md:mt-8">
-              {cards.map((card) => {
-                return <div id={card.id} className={`${card.id === 'regular' ? 'bg-mainGreen' : 'bg-white'} flex min-h-[635px] text-left lg:w-full flex-col justify-between px-7 py-7 rounded-[16px]`}>
-                  <div className="flex flex-col"><h3 className="roboto text-3xl font-black">{card.header}</h3>
-                  <h4 className="roboto text-black mt-2">{card.subHeader}</h4>
-                  <div className={`w-full h-[1px] ${card.id === 'regular' ? 'bg-[#87cc2a]' : 'bg-[#ccc]'} mt-6`}></div>
-                  <p className="roboto text-[3.25rem] text-black font-black mt-6">{toggle ? card.priceLow : card.price} <span className="roboto text-base text-black font-medium">/Month</span></p>
-                  <ul className="flex flex-col items-start gap-4 mt-6">
-                    {card.list.map((item) => {
-                      return <li className="roboto text-black"><img src={mark} alt="mark" className="inline mr-2 mb-1"/>{item}</li>
-                    })}
-                  </ul></div>
-                  <button className={`priceButton w-full md:mt-4 lg:mt-0  self-center roboto font-bold py-[15px]  rounded-full ${card.id === 'regular' ? 'bg-black text-white font-medium hover:bg-[#2b2b2b]' : 'bg-mainGreen text-black hover:bg-[#87D322]'}`}>Start Free Trial</button>
-                </div>
-              })}
-            </div></Fade>
+      <Fade direction={'up'} triggerOnce={true}>
+        <h1 className="hidden md:block roboto text-white tracking-wide md:px-0 text-[2.125rem] md:text-[4rem] font-black  md:leading-[135%]">Get your best deal</h1>
+      </Fade>
+
+      <h1 className="md:hidden roboto text-white tracking-wide md:px-0 text-[2.125rem] md:text-[4rem] font-black  md:leading-[135%]">Get your best deal</h1>
+
+
+      <Fade direction={'up'} triggerOnce={true}>
+        <div className="hidden md:block">
+          <PricesHead toggle={toggle} setToggle={setToggle}/>
         </div>
+      </Fade>
+
+      <div className="md:hidden">
+        <PricesHead toggle={toggle} setToggle={setToggle}/>
+      </div>
+
+      <Fade direction={'up'} triggerOnce={true} className='w-full'>
+        <div className="hidden md:block">
+          <Cards toggle={toggle}/>
+        </div>
+      </Fade>
+
+      <div className="md:hidden">
+        <Cards toggle={toggle}/>
+      </div>
+      
     </div>
+  </div>
   )
 }
 

@@ -4,6 +4,7 @@ import SubHero from "./components/SubHero";
 import Partners from "./components/Partners";
 import Prices from "./components/Prices";
 import JoinUs from "./components/JoinUs";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Partners />
       <Prices />
       <JoinUs />
+      <Footer />
     </Fragment>
   )
 }

@@ -20,7 +20,7 @@ const Navbar = () => {
             <Fade direction="up"  damping={0.1} cascade={true} triggerOnce={true}>
               <ul className="hidden md:flex flex-row gap-10">
               {navbarLinks.map((link) => {
-                return <a href='#' key={link.id} className='text-white poppins text-[18px] hover:text-gray-300 hover:duration-75'>{link.title}</a>
+                return <a href='#' key={link.id} className='text-white roboto text-[18px] hover:text-gray-300 hover:duration-75'>{link.title}</a>
               })}
             </ul>
             </Fade>
@@ -38,7 +38,7 @@ const Navbar = () => {
         {/* Mobile Navbar Start */}
         <ul className={`absolute bg-[#000] rounded-b-[5px] z-10 w-full flex flex-col right-0 left-0 items-center py-20 gap-10 ${toggle ? 'top-[97px]' : '-top-[360px] '} duration-500 md:hidden`}>
             {navbarLinks.map((link) => {
-              return <a href='#' key={link.id} className='text-white poppins text-[18px]'>{link.title}</a>
+              return <a href='#' key={link.id} className='text-white roboto text-[18px]'>{link.title}</a>
             })}
           </ul>
         {/* Mobile Navbar End */}

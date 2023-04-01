@@ -47,3 +47,22 @@ export const cards = [
         list: ['Unlimited group pages', 'Unlimited download page', 'Unlimited page each group', 'Customize sorting group pages', 'Customize group page name', '30 Days group page saved'],
     },
 ]
+
+export const footerLinks = [
+    {
+        title: 'Privacy Policy',
+        id: 'PrivacyPolicy',
+    },
+    {
+        title: 'Terms and Conditions',
+        id: 'TermsAndConditions',
+    },
+    {
+        title: 'Contact Us',
+        id: 'ContactUs',
+    },
+    {
+        title: 'Careers',
+        id: 'Careers',
+    },
+]
