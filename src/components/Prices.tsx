@@ -2,6 +2,7 @@ import Switch from "react-switch"
 import { cards } from "../constants"
 import { useState } from "react"
 import { saveArrow, saveArrowMB, mark } from '../assets/index'
+import { Fade } from "react-awesome-reveal";
 
 const Prices = () => {
 
@@ -10,8 +11,8 @@ const Prices = () => {
   return (
     <div className="w-full bg-black flex justify-center">
         <div className="container flex flex-col items-center px-4 md:px-0 mt-20 md:mt-24  pb-24">
-            <h1 className="roboto text-white tracking-wide md:px-0 text-[2.125rem] md:text-[4rem] font-black  md:leading-[135%]">Get your best deal</h1>
-            <div className="flex flex-row items-center relative gap-5 mt-8">
+        <Fade direction={'up'} triggerOnce={true}><h1 className="roboto text-white tracking-wide md:px-0 text-[2.125rem] md:text-[4rem] font-black  md:leading-[135%]">Get your best deal</h1></Fade>
+        <Fade direction={'up'} triggerOnce={true}><div className="flex flex-row items-center relative gap-5 mt-8">
                 <p className={`roboto font-medium  text-xl md:text-2xl text-${toggle ? 'lightGray' : 'white'}`}>Monthly</p>
                 <div className="hidden md:block"><Switch 
                 checked={toggle} 
@@ -42,9 +43,9 @@ const Prices = () => {
                 <p className={`roboto font-medium text-xl md:text-2xl text-${toggle ? 'white' : 'lightGray'}`}>Yearly</p>
                 <img src={saveArrow} alt="saveArrow" className="hidden md:inline-block absolute -right-28 -top-2"/>
                 <img src={saveArrowMB} alt="saveArrow-mobile" className="md:hidden absolute  left-44 -bottom-16"/>
-            </div>
+            </div></Fade>
 
-            <div className="flex w-full flex-col md:flex-row sm: gap-8 md:gap-2 lg:gap-8 mt-20 md:mt-8">
+            <Fade direction={'up'} triggerOnce={true} className='w-full'><div className="flex w-full flex-col md:flex-row sm: gap-8 md:gap-2 lg:gap-8 mt-20 md:mt-8">
               {cards.map((card) => {
                 return <div id={card.id} className={`${card.id === 'regular' ? 'bg-mainGreen' : 'bg-white'} flex min-h-[635px] text-left lg:w-full flex-col justify-between px-7 py-7 rounded-[16px]`}>
                   <div className="flex flex-col"><h3 className="roboto text-3xl font-black">{card.header}</h3>
@@ -59,7 +60,7 @@ const Prices = () => {
                   <button className={`priceButton w-full md:mt-4 lg:mt-0  self-center roboto font-bold py-[15px]  rounded-full ${card.id === 'regular' ? 'bg-black text-white font-medium hover:bg-[#2b2b2b]' : 'bg-mainGreen text-black hover:bg-[#87D322]'}`}>Start Free Trial</button>
                 </div>
               })}
-            </div>
+            </div></Fade>
         </div>
     </div>
   )

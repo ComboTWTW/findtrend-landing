@@ -72,8 +72,6 @@ const Hero = () => {
           </div> 
         </div>
         <SubHero />
-        <Partners />
-        <Prices />
     </div>
   )
 }
