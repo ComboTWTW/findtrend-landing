@@ -10,7 +10,7 @@ const Prices = () => {
 
   return (
     <div className="w-full bg-black flex justify-center">
-        <div className="container flex flex-col items-center px-4 md:px-0 mt-20 md:mt-24  pb-24">
+        <div className="container flex flex-col items-center px-4 md:px-0 mt-20 md:mt-24  pb-28">
         <Fade direction={'up'} triggerOnce={true}><h1 className="roboto text-white tracking-wide md:px-0 text-[2.125rem] md:text-[4rem] font-black  md:leading-[135%]">Get your best deal</h1></Fade>
         <Fade direction={'up'} triggerOnce={true}><div className="flex flex-row items-center relative gap-5 mt-8">
                 <p className={`roboto font-medium  text-xl md:text-2xl text-${toggle ? 'lightGray' : 'white'}`}>Monthly</p>
@@ -27,7 +27,7 @@ const Prices = () => {
                 width={110}
                 handleDiameter={32}
                 /></div>
-                <div className="md:hidden"><Switch 
+                <div className="md:hidden block"><Switch 
                 checked={toggle} 
                 onChange={() => setToggle(!toggle)}
                 offColor={'#fff'}

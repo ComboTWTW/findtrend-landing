@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import SubHero from "./components/SubHero";
 import Partners from "./components/Partners";
 import Prices from "./components/Prices";
+import JoinUs from "./components/JoinUs";
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Hero />
       <Partners />
       <Prices />
+      <JoinUs />
     </Fragment>
   )
 }
