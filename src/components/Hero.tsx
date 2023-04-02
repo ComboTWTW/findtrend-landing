@@ -32,7 +32,7 @@ const Hero = () => {
           <Fade direction={'up'} triggerOnce={true}>
             <Scrollama onStepEnter={handleStepEnter1} >
               <Step>
-                <h1 className="roboto text-white mt-20 px-4 md:px-0 text-[2rem] md:text-[4.125rem] font-black leading-[175%] md:leading-[135%]">Minimize your tabs.<br/>Find the trends!</h1>
+                <h1 className="roboto text-white mt-20 px-4 md:px-0 text-[2rem] md:text-[4.125rem] font-black leading-[160%] md:leading-[135%]">Minimize your tabs.<br/>Find the trends!</h1>
               </Step>
             </Scrollama>
           </Fade>

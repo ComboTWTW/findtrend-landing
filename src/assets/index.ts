@@ -14,7 +14,7 @@ import solutionArrowMobile from './SubHero/solution-arrowMobile.svg'
 import needArrowMobile from './SubHero/need-arrowMobile.svg'
 
 import saveArrow from './Prices/save-arrow.svg'
-import mark from './Prices/mark.png'
+import mark from './Prices/mark.svg'
 import saveArrowMB from './Prices/saveArrow-mb.svg'
 
 import logoFooter from './logoFooter.svg'
