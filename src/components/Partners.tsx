@@ -1,12 +1,8 @@
 import { Fade } from "react-awesome-reveal";
+import { partners } from '../assets/index'
 
 const Partners = () => {
 
-    let partners:string[] = [];    
-
-    for (let i = 1; i <= 16; i++) {
-        partners.push(`${i}.png`);
-    }
 
   return (
     <div className="w-full bg-white flex justify-center">
@@ -32,14 +28,14 @@ const Partners = () => {
                 <Fade direction="up"  triggerOnce={true}>
                     <ul className="hidden md:grid px-4 md:px-0 grid-cols-2 gap-4 md:grid-cols-4 md:gap-7 mt-14 md:mt-20 mb-24 md:mb-36">
                         {partners.map((partner) => {
-                            return <img src={`/src/assets/Partners/${partner}`} alt={partner} className='w-full h-auto'/>
+                            return <img src={partner} alt={partner} className='w-full h-auto'/>
                         })}
                     </ul>
                 </Fade>
                 {/* Images Mobile */}            
                 <ul className="grid md:hidden px-4 md:px-0 grid-cols-2 gap-4 md:grid-cols-4 md:gap-7 mt-14 md:mt-20 mb-24 md:mb-36">
                     {partners.map((partner) => {
-                        return <img src={`/src/assets/Partners/${partner}`} alt={partner} className='w-full h-auto'/>
+                        return <img src={partner} alt={partner} className='w-full h-auto'/>
                     })}
                 </ul>
 

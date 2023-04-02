@@ -19,6 +19,25 @@ import saveArrowMB from './Prices/saveArrow-mb.svg'
 
 import logoFooter from './logoFooter.svg'
 
+import partner1 from './Partners/1.png'
+import partner2 from './Partners/2.png'
+import partner3 from './Partners/3.png'
+import partner4 from './Partners/4.png'
+import partner5 from './Partners/5.png'
+import partner6 from './Partners/6.png'
+import partner7 from './Partners/7.png'
+import partner8 from './Partners/8.png'
+import partner9 from './Partners/9.png'
+import partner10 from './Partners/10.png'
+import partner11 from './Partners/11.png'
+import partner12 from './Partners/12.png'
+import partner13 from './Partners/13.png'
+import partner14 from './Partners/14.png'
+import partner15 from './Partners/15.png'
+import partner16 from './Partners/16.png'
+
+
+const partners = [partner1, partner2, partner3, partner4, partner5, partner6, partner7, partner8, partner9, partner10, partner11, partner12, partner13, partner14, partner15, partner16,]
 
 export {
     navbarLogo,
@@ -37,4 +56,5 @@ export {
     mark,
     saveArrowMB,
     logoFooter,
+    partners,
 }
