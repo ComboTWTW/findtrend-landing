@@ -19,7 +19,7 @@ body, #root {
 
 @media (max-width: 768px) {
   .backgroundOrnament {
-    background-image: url('./assets/ornament.svg');
+    background-image: url('./assets/Hero/ornament.svg');
     background-size: 330%;
     background-position: center;
     
@@ -28,7 +28,7 @@ body, #root {
 
 @media (max-width: 768px) {
   .backgroundOrnamentNav {
-    background-image: url('./assets/ornament.svg');
+    background-image: url('./assets/Hero/ornament.svg');
     background-size: 330%;
     background-position: center top;
     
@@ -37,7 +37,7 @@ body, #root {
 
 @media (min-width: 768px) {
   .backgroundOrnament {
-    background-image: url('./assets/ornament.svg');
+    background-image: url('./assets/Hero/ornament.svg');
     background-size: 100% ;
     
   }
